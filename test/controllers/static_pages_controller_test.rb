@@ -3,7 +3,6 @@ require 'minitest/reporters'
 Minitest::Reporters.use!
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
-
   def setup
     @base_title = 'Ruby on Rails Tutorial Sample App'
   end
@@ -11,7 +10,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test 'should get home' do
     get static_pages_home_url
     assert_response :success
-    assert_select 'title', "Home | #{@base_title}"
+    assert_select 'title', @base_title
   end
 
   test 'should get help' do
@@ -35,6 +34,6 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test 'should get root route' do
     get root_url
     assert_response :success
-    assert_select 'title', "Home | #{@base_title}"
+    assert_select 'title', @base_title
   end
 end
