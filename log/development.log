@@ -643,4 +643,3 @@ Processing by UsersController#new as HTML
   Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
 Completed 200 OK in 93ms (Views: 91.8ms | ActiveRecord: 0.0ms | Allocations: 15795)
 
-
