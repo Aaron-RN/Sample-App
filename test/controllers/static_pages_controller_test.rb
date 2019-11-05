@@ -34,10 +34,6 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test 'should get signup' do
     get signup_path
     assert_response :success
-<<<<<<< HEAD
-    assert_select 'title', @base_title
-=======
     assert_select 'title', "Sign up | #{@base_title}"
->>>>>>> filling_in_layout
   end
 end
