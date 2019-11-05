@@ -143,6 +143,7 @@ Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 554
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2019-10-31 16:54:12 -0400
   [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
 Processing by StaticPagesController#home as HTML
@@ -157,6 +158,8 @@ Processing by StaticPagesController#home as HTML
   Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 96)
 Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 5502)
 =======
+=======
+>>>>>>> development
 Started GET "/" for 127.0.0.1 at 2019-11-04 15:21:38 -0500
   [1m[35m (7.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
 Processing by StaticPagesController#home as HTML
@@ -657,6 +660,9 @@ Processing by UsersController#new as HTML
   Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 112)
   Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
 Completed 200 OK in 93ms (Views: 91.8ms | ActiveRecord: 0.0ms | Allocations: 15795)
+<<<<<<< HEAD
 >>>>>>> filling_in_layout
 
+=======
+>>>>>>> development
 
