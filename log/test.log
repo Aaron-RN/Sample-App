@@ -677,7 +677,6 @@ Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 2451)
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
   [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
 <<<<<<< HEAD
-<<<<<<< HEAD
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -708,8 +707,6 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 1641ms (Views: 1629.8ms | ActiveRecord: 0.0ms | Allocations: 1247105)
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
 =======
-=======
->>>>>>> development
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -720,7 +717,6 @@ Completed 200 OK in 1641ms (Views: 1629.8ms | ActiveRecord: 0.0ms | Allocations:
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-<<<<<<< HEAD
 >>>>>>> filling_in_layout
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
 -----------------------------------------------
@@ -771,13 +767,10 @@ Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 2449)
 StaticPagesControllerTest: test_should_get_contact
 --------------------------------------------------
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-=======
->>>>>>> development
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
 -----------------------------------------------
 StaticPagesControllerTest: test_should_get_help
 -----------------------------------------------
-<<<<<<< HEAD
 Started GET "/static_pages/contact" for 127.0.0.1 at 2019-10-31 16:03:51 -0400
 Processing by StaticPagesController#contact as HTML
 Started GET "/static_pages/help" for 127.0.0.1 at 2019-10-31 16:03:51 -0400
@@ -808,8 +801,6 @@ Processing by StaticPagesController#home as HTML
   Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
 Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2204)
 =======
-=======
->>>>>>> development
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
 -----------------------------------------------
@@ -824,7 +815,6 @@ Processing by StaticPagesController#home as HTML
   Rendering static_pages/home.html.erb within layouts/application
   Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 232)
 Completed 200 OK in 1939ms (Views: 1929.0ms | ActiveRecord: 0.0ms | Allocations: 1247108)
-<<<<<<< HEAD
 >>>>>>> filling_in_layout
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
@@ -1127,14 +1117,11 @@ Processing by StaticPagesController#home as HTML
   Rendering static_pages/home.html.erb within layouts/application
   Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 97)
 Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 2440)
-=======
->>>>>>> development
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
 ------------------------------------------------
 StaticPagesControllerTest: test_should_get_about
 ------------------------------------------------
-<<<<<<< HEAD
 Started GET "/static_pages/about" for 127.0.0.1 at 2019-10-31 16:57:39 -0400
 Processing by StaticPagesController#about as HTML
   Rendering static_pages/about.html.erb within layouts/application
@@ -1165,8 +1152,6 @@ Completed 200 OK in 2488ms (Views: 2475.4ms | ActiveRecord: 0.0ms | Allocations:
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
 =======
-=======
->>>>>>> development
 Started GET "/static_pages/about" for 127.0.0.1 at 2019-10-31 18:37:52 -0400
 Processing by StaticPagesController#about as HTML
   Rendering static_pages/about.html.erb within layouts/application
@@ -1350,15 +1335,11 @@ Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms | Allocations: 798
 SiteLayoutTest: test_layout_links
 ---------------------------------
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-<<<<<<< HEAD
 >>>>>>> filling_in_layout
-=======
->>>>>>> development
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
 ------------------------------------------------
 StaticPagesControllerTest: test_should_get_about
 ------------------------------------------------
-<<<<<<< HEAD
 <<<<<<< HEAD
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
@@ -1376,8 +1357,6 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 3264ms (Views: 3242.6ms | ActiveRecord: 0.0ms | Allocations: 1247088)
   [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
 =======
-=======
->>>>>>> development
 Started GET "/" for 127.0.0.1 at 2019-11-04 18:26:30 -0500
 Started GET "/about" for 127.0.0.1 at 2019-11-04 18:26:30 -0500
 Processing by StaticPagesController#home as HTML
@@ -1391,15 +1370,11 @@ Processing by StaticPagesController#about as HTML
   Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 192)
 Completed 200 OK in 1555ms (Views: 1547.0ms | ActiveRecord: 0.0ms | Allocations: 1268878)
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
-<<<<<<< HEAD
 >>>>>>> filling_in_layout
-=======
->>>>>>> development
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
 --------------------------------------------------
 StaticPagesControllerTest: test_should_get_contact
 --------------------------------------------------
-<<<<<<< HEAD
 <<<<<<< HEAD
 Started GET "/static_pages/contact" for 127.0.0.1 at 2019-10-31 16:58:15 -0400
 Processing by StaticPagesController#contact as HTML
@@ -1408,8 +1383,6 @@ Processing by StaticPagesController#contact as HTML
 Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2462)
   [1m[35m (6.8ms)[0m  [1m[31mrollback transaction[0m
 =======
-=======
->>>>>>> development
 Started GET "/contact" for 127.0.0.1 at 2019-11-04 18:26:32 -0500
 Processing by StaticPagesController#contact as HTML
   Rendering static_pages/contact.html.erb within layouts/application
@@ -1420,15 +1393,11 @@ Processing by StaticPagesController#contact as HTML
   Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 56)
 Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 7983)
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
-<<<<<<< HEAD
 >>>>>>> filling_in_layout
-=======
->>>>>>> development
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
 -----------------------------------------------
 StaticPagesControllerTest: test_should_get_help
 -----------------------------------------------
-<<<<<<< HEAD
 <<<<<<< HEAD
 Started GET "/static_pages/help" for 127.0.0.1 at 2019-10-31 16:58:15 -0400
 Processing by StaticPagesController#help as HTML
@@ -1461,8 +1430,6 @@ Completed 200 OK in 3595ms (Views: 3571.6ms | ActiveRecord: 0.0ms | Allocations:
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (8.6ms)[0m  [1m[36mbegin transaction[0m
 =======
-=======
->>>>>>> development
 Started GET "/help" for 127.0.0.1 at 2019-11-04 18:26:32 -0500
 Processing by StaticPagesController#help as HTML
   Rendering static_pages/help.html.erb within layouts/application
@@ -1520,15 +1487,11 @@ Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 829
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
-<<<<<<< HEAD
 >>>>>>> filling_in_layout
-=======
->>>>>>> development
 ------------------------------------------------
 StaticPagesControllerTest: test_should_get_about
 ------------------------------------------------
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-<<<<<<< HEAD
 <<<<<<< HEAD
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
 -----------------------------------------------
@@ -1626,8 +1589,6 @@ Processing by StaticPagesController#about as HTML
   Rendered static_pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 114)
 Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 2459)
 =======
-=======
->>>>>>> development
   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
 -----------------------------------------------
 StaticPagesControllerTest: test_should_get_home
@@ -1769,16 +1730,12 @@ Processing by StaticPagesController#about as HTML
   Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
   Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 56)
 Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 8279)
-<<<<<<< HEAD
 >>>>>>> filling_in_layout
-=======
->>>>>>> development
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
 -----------------------------------------------
 StaticPagesControllerTest: test_should_get_home
 -----------------------------------------------
-<<<<<<< HEAD
 <<<<<<< HEAD
 Started GET "/static_pages/home" for 127.0.0.1 at 2019-10-31 16:58:52 -0400
 Processing by StaticPagesController#home as HTML
@@ -1850,8 +1807,6 @@ Processing by StaticPagesController#home as HTML
   Rendered static_pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
 Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 2204)
 =======
-=======
->>>>>>> development
 Started GET "/" for 127.0.0.1 at 2019-11-04 18:32:55 -0500
 Processing by StaticPagesController#home as HTML
   Rendering static_pages/home.html.erb within layouts/application
@@ -2005,9 +1960,5 @@ Processing by StaticPagesController#about as HTML
   Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 113)
   Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 56)
 Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 8281)
-<<<<<<< HEAD
 >>>>>>> filling_in_layout
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
-=======
-  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
->>>>>>> development
