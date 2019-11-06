@@ -5,6 +5,8 @@ ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
+# Encryption gem bring about hashes for secured password usage
+gem 'bcrypt'
 # Rails Controller testing
 gem 'rails-controller-testing'
 # Bootstrap SASS
