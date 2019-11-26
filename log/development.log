@@ -6478,3 +6478,49 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.3ms | Allocations: 12769)
 
 
+Started GET "/" for 127.0.0.1 at 2019-11-26 15:34:46 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1647.3ms | Allocations: 1284812)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 37.7ms | Allocations: 10989)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 89)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:17:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 21.1ms | Allocations: 6633)
+  Rendered layouts/_flash.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layouts/_footer.html.erb (Duration: 2.1ms | Allocations: 187)
+Completed 200 OK in 1741ms (Views: 1725.2ms | ActiveRecord: 1.7ms | Allocations: 1306277)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-11-26 15:34:54 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NCQh9pQED3jKMSJ8mG0Ah9nt2TNP2Hfl1dP5vlMEl+SJTtSrVN0VuZcuKb2jQVWFqnOWIDBtUKGEZBE6OGMbvw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 369)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-26 15:34:54 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.9ms | Allocations: 716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 17.0ms | Allocations: 10261)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 136)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.0ms | Allocations: 12101)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-11-26 15:37:35 -0500
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-6.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [37 times] (Duration: 12.0ms | Allocations: 5217)
+  Rendered /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-6.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 4.7ms | Allocations: 931)
+  Rendered /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 25.8ms | Allocations: 9265)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 10631)
+
+
