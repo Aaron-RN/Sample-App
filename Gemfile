@@ -5,12 +5,16 @@ ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
+# jquery
+# gem 'jquery-rails'
 # Encryption gem bring about hashes for secured password usage
 gem 'bcrypt'
 # Rails Controller testing
 gem 'rails-controller-testing'
+# Bootstrap
+gem 'bootstrap',  '~>4.3.1'
 # Bootstrap SASS
-gem 'bootstrap-sass'
+# gem 'bootstrap-sass'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
