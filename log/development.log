@@ -6524,3 +6524,748 @@ Processing by Rails::InfoController#routes as HTML
 Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 10631)
 
 
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRememberDigestToUsers (20191126212736)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_digest" varchar[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191126212736"]]
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "remember_digest" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2019-11-26 22:15:30.984001"], ["remember_digest", "$2a$12$iCzOfNz.CKcBo039jeGl6O1eURMkPukzwA1mBAQvR2yQ3LTZ8ABQK"], ["id", 1]]
+  [1m[35m (14.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2019-11-26 18:22:53 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1486.2ms | Allocations: 1284807)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 40.6ms | Allocations: 10992)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 94)
+  Rendered layouts/_header.html.erb (Duration: 4.4ms | Allocations: 506)
+  Rendered layouts/_flash.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 187)
+Completed 200 OK in 1554ms (Views: 1542.0ms | ActiveRecord: 0.0ms | Allocations: 1300149)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-26 18:22:59 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 21.5ms | Allocations: 2952)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 15.6ms | Allocations: 10368)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 152)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 51)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms | Allocations: 15044)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-26 18:24:50 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2796)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 1207.3ms | Allocations: 1011051)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 96)
+  Rendered layouts/_header.html.erb (Duration: 4.7ms | Allocations: 506)
+  Rendered layouts/_flash.html.erb (Duration: 0.8ms | Allocations: 148)
+  Rendered layouts/_footer.html.erb (Duration: 1.7ms | Allocations: 187)
+Completed 200 OK in 1256ms (Views: 1237.9ms | ActiveRecord: 0.0ms | Allocations: 1018196)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-26 18:27:08 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 14.9ms | Allocations: 10509)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 2.5ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 180)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 14863)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-26 18:28:33 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 885)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 14.2ms | Allocations: 10512)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.5ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 180)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 14869)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-26 18:29:04 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 886)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 14.1ms | Allocations: 10512)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.4ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 180)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 14874)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-26 18:29:23 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 883)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 16.9ms | Allocations: 10508)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.9ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 180)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 14855)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-26 18:29:36 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 884)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 14.1ms | Allocations: 10513)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.5ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 180)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 14869)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-26 18:30:01 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 14.1ms | Allocations: 10508)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 180)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 14854)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-26 18:30:49 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 16.7ms | Allocations: 10509)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 180)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms | Allocations: 14857)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-26 18:31:01 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 881)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 15.7ms | Allocations: 10508)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 180)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms | Allocations: 14854)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-26 18:31:40 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 17.1ms | Allocations: 10513)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 2.1ms | Allocations: 180)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms | Allocations: 14863)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-26 18:32:11 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 883)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 18.0ms | Allocations: 10508)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 180)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 14850)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-26 18:32:28 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 881)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 13.9ms | Allocations: 10508)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.4ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 180)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 14858)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:36:29 -0500
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 18.4ms | Allocations: 2811)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 2250.5ms | Allocations: 1294868)
+  Rendered layouts/_shim.html.erb (Duration: 1.0ms | Allocations: 96)
+  Rendered layouts/_header.html.erb (Duration: 9.6ms | Allocations: 506)
+  Rendered layouts/_flash.html.erb (Duration: 1.5ms | Allocations: 148)
+  Rendered layouts/_footer.html.erb (Duration: 4.3ms | Allocations: 187)
+Completed 200 OK in 2309ms (Views: 2297.9ms | ActiveRecord: 0.0ms | Allocations: 1301931)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:37:15 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2798)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 1758.8ms | Allocations: 1294865)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 96)
+  Rendered layouts/_header.html.erb (Duration: 3.8ms | Allocations: 506)
+  Rendered layouts/_flash.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 187)
+Completed 200 OK in 1784ms (Views: 1775.1ms | ActiveRecord: 0.0ms | Allocations: 1302009)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:37:37 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 881)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 20.5ms | Allocations: 10512)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 180)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms | Allocations: 14871)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:39:55 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 37.4ms | Allocations: 5933)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms | Allocations: 7103)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:39:57 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1186)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1606)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, "Log in") %>
+<h1>Log in</h1>
+
+<div class="row justify-content-center">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(:session, url: login_path) do |f| %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+      <%= f.label :remember_me, class: "form-check" do %>
+        <div class="form-check-label"><%= f.check_box :remember_me class: 'form-check-input' %></div>
+        <span class="ml-3">Remember me on this computer</span>
+      <% end %> 
+
+      <%= f.submit "Log in", class: "btn btn-primary" %>
+    <% end %>
+
+    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+  </div>
+</div>
+):
+1:    <% provide(:title, "Log in") %>
+2:    <h1>Log in</h1>
+3:    
+4:    <div class="row justify-content-center">
+5:      <div class="col-md-6 col-md-offset-3">
+6:        <%= form_for(:session, url: login_path) do |f| %>
+7:    
+8:          <%= f.label :email %>
+9:          <%= f.email_field :email, class: 'form-control' %>
+10:    
+11:          <%= f.label :password %>
+12:          <%= f.password_field :password, class: 'form-control' %>
+13:    
+14:          <%= f.label :remember_me, class: "form-check" do %>
+15:            <div class="form-check-label"><%= f.check_box :remember_me class: 'form-check-input' %></div>
+16:            <span class="ml-3">Remember me on this computer</span>
+17:          <% end %> 
+18:    
+19:          <%= f.submit "Log in", class: "btn btn-primary" %>
+20:        <% end %>
+21:    
+22:        <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+23:      </div>
+24:    </div>
+  
+app/views/sessions/new.html.erb:15: syntax error, unexpected class, expecting ')'
+app/views/sessions/new.html.erb:15: syntax error, unexpected class, expecting ')'
+app/views/sessions/new.html.erb:15: syntax error, unexpected class, expecting ')'
+app/views/sessions/new.html.erb:15: syntax error, unexpected class, expecting ')'
+app/views/sessions/new.html.erb:15: syntax error, unexpected class, expecting ')'
+app/views/sessions/new.html.erb:15: syntax error, unexpected class, expecting ')'
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:40:07 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 903)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 16.5ms | Allocations: 10524)
+  Rendered layouts/_shim.html.erb (Duration: 1.6ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 2.3ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.6ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 180)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms | Allocations: 14922)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:40:43 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 894)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 18.5ms | Allocations: 10512)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.7ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 180)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 14889)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:41:46 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 897)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 23.8ms | Allocations: 10512)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.5ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 180)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms | Allocations: 14873)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:42:17 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 894)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 12.5ms | Allocations: 10508)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.5ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 180)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 14861)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:42:49 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 894)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 20.6ms | Allocations: 10512)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.5ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 180)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 14876)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:46:24 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 912)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 59.0ms | Allocations: 10509)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 180)
+Completed 200 OK in 83ms (Views: 77.5ms | ActiveRecord: 0.0ms | Allocations: 14903)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:47:30 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 890)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 25.8ms | Allocations: 10508)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.6ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 180)
+Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 0.0ms | Allocations: 14856)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:48:35 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 884)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 4619.5ms | Allocations: 1673577)
+  Rendered layouts/_shim.html.erb (Duration: 1.4ms | Allocations: 96)
+  Rendered layouts/_header.html.erb (Duration: 2.2ms | Allocations: 498)
+  Rendered layouts/_flash.html.erb (Duration: 0.5ms | Allocations: 142)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 187)
+Completed 200 OK in 4640ms (Views: 4638.6ms | ActiveRecord: 0.0ms | Allocations: 1678001)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-11-27 14:50:38 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"zGfvJEdQznrn04x+LgI26+aQYXT8PiM9DB8WqkteuttcszPHGKAgqOQ9LurVtnyben8Sxcjhk5Iy0DfIkZ1V6A==", "session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 20.4ms | Allocations: 10360)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 152)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 49)
+Completed 200 OK in 42ms (Views: 26.7ms | ActiveRecord: 1.4ms | Allocations: 14656)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:51:14 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 3877.1ms | Allocations: 1669449)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 3890ms (Views: 3888.9ms | ActiveRecord: 0.0ms | Allocations: 1671149)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-11-27 14:51:20 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"MNe/vqIN7DowS5A7g52A53DJ6/NxN6LaauteVcHQTjKgA2Nd/f0C6DOlMq94KcqX7CaYQkXoEnVUJH83GxOhAQ==", "session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 879)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 24.5ms | Allocations: 10772)
+  Rendered layouts/_shim.html.erb (Duration: 1.1ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 476)
+  Rendered layouts/_flash.html.erb (Duration: 0.8ms | Allocations: 144)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 180)
+Completed 200 OK in 75ms (Views: 57.4ms | ActiveRecord: 0.8ms | Allocations: 17632)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-27 14:54:13 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.4ms | Allocations: 892)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 15.6ms | Allocations: 10222)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 153)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 51)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.0ms | Allocations: 12846)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-11-27 14:54:23 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 203)
+  Rendered users/new.html.erb within layouts/application (Duration: 47.6ms | Allocations: 1817)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 15.6ms | Allocations: 10363)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 156)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 51)
+Completed 200 OK in 84ms (Views: 71.5ms | ActiveRecord: 1.2ms | Allocations: 18144)
+
+
+Started POST "/signup" for 127.0.0.1 at 2019-11-27 14:54:25 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"AApWh/GipaWTlvZGXiVhSYBHYcEqEAKXLkeArvArEFIxV1UnVjKv3osgb6p80uDz2ojXGOz4hS7bRBVTSFbgjQ==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.8ms | Allocations: 798)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1773)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 22.5ms | Allocations: 10295)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 50ms (Views: 31.4ms | ActiveRecord: 0.3ms | Allocations: 18523)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:54:48 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 34.7ms | Allocations: 10374)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 49)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.0ms | Allocations: 12067)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-11-27 14:54:50 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Iu+Ns/ywzFgIWYFey397hY3MZ9leWnIk+nNNSHO3R+2VhodsgOF0P5y2vS8ZbhvwgbbfbtO32KTdWot1DfaUXQ==", "session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 558)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 89.2ms | Allocations: 10356)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 106ms (Views: 98.6ms | ActiveRecord: 0.1ms | Allocations: 12707)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 14:56:44 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 570)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 14.4ms | Allocations: 10364)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 152)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 51)
+Completed 200 OK in 29ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 12072)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-11-27 15:02:22 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 571)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 15.3ms | Allocations: 10324)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 152)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 51)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 12223)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-11-27 15:02:32 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"LOaVKH3q/1hoA/tfiJQdSVjqqideQSwxGetOVs7cc+q8MknLIhoRimvtWctzIFc5xAXZlmqenJ4nJG80FB+c2Q==", "session"=>{"email"=>"rumbo@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rumbo@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 558)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 14.6ms | Allocations: 10355)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 49)
+Completed 200 OK in 334ms (Views: 21.7ms | ActiveRecord: 0.3ms | Allocations: 17897)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-11-27 15:02:43 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"7FUu8XOIEzW4BWfVL3sGF6Lh327s5oz7FCOMuKayuI98gfISLHj957vrxUHUz0xnPg6s39g5PFQq7K3afHFXvA==", "session"=>{"email"=>"rumbo@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rumbo@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 558)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 21.8ms | Allocations: 10355)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 346ms (Views: 28.7ms | ActiveRecord: 0.5ms | Allocations: 12722)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-11-27 15:02:50 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"HaOSqGgKOiaOGusNmD5sB0PWBhZXk+xcn/i2Y62WSdqNd05LN/rU9I30SZljiiZ33zl1p2NMXPOhN5cBd1Wm6Q==", "session"=>{"email"=>"rumbo@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rumbo@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:39:in `forget'
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_digest", nil], ["updated_at", "2019-11-27 20:02:50.614868"], ["id", 1]]
+  ↳ app/models/user.rb:39:in `forget'
+  [1m[35m (24.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:39:in `forget'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 340ms (ActiveRecord: 25.1ms | Allocations: 3493)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-11-27 15:02:50 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 12.1ms | Allocations: 10366)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:33:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.7ms | Allocations: 909)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 51)
+Completed 200 OK in 28ms (Views: 19.5ms | ActiveRecord: 0.4ms | Allocations: 13374)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-27 15:02:54 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 718)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 15.1ms | Allocations: 10220)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:33:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 9.6ms | Allocations: 791)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 51)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.4ms | Allocations: 12879)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-11-27 15:02:58 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 46)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 15.2ms | Allocations: 10363)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:33:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 793)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.3ms | Allocations: 12697)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-27 15:03:01 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 712)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 21.8ms | Allocations: 10256)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:33:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 5.2ms | Allocations: 772)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 49)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.2ms | Allocations: 12727)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-11-27 15:03:03 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 26.2ms | Allocations: 10362)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:33:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 7.8ms | Allocations: 772)
+  Rendered layouts/_flash.html.erb (Duration: 0.4ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 49)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 0.5ms | Allocations: 13097)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-27 15:03:06 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 712)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 12.3ms | Allocations: 10256)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:33:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.0ms | Allocations: 772)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.1ms | Allocations: 12730)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-11-27 15:03:59 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hZgQKoPmVmxKZRUXx3+Lf5hHfAtKTOutUTuFnBh8RMwVTMzJ3Ba4vkmLt4M8y8EPBKgPun6TWwJv9KT+wr+r/w=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:33:in `current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 974)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-27 15:03:59 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.9ms | Allocations: 712)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 26.1ms | Allocations: 10256)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 149)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.0ms | Allocations: 12105)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-27 15:04:03 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 712)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 14.7ms | Allocations: 10256)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 12104)
+
+
