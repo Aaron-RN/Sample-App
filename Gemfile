@@ -5,8 +5,12 @@ ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
-# jquery
-# gem 'jquery-rails'
+# Pagination for Users index page
+gem 'will_paginate'
+# will_paginate gem will be forced to use bootstrap's pagination styles
+gem 'will_paginate-bootstrap4'
+# Faker
+gem 'faker'
 # Encryption gem bring about hashes for secured password usage
 gem 'bcrypt'
 # Rails Controller testing
