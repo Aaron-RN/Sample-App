@@ -5,6 +5,8 @@ ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
+# Sendgrid gem addon for a working mailer system
+gem 'sendgrid-ruby'
 # Pagination for Users index page
 gem 'will_paginate'
 # will_paginate gem will be forced to use bootstrap's pagination styles
