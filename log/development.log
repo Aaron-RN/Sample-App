@@ -11073,3 +11073,1205 @@ Processing by Rails::InfoController#routes as HTML
 Completed 200 OK in 48ms (Views: 39.8ms | ActiveRecord: 0.0ms | Allocations: 11401)
 
 
+Started GET "/" for 127.0.0.1 at 2019-12-05 12:34:15 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1483.8ms | Allocations: 1008201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 48.2ms | Allocations: 10922)
+  Rendered layouts/_shim.html.erb (Duration: 1.0ms | Allocations: 89)
+  Rendered layouts/_header.html.erb (Duration: 4.4ms | Allocations: 502)
+  Rendered layouts/_flash.html.erb (Duration: 2.8ms | Allocations: 148)
+  Rendered layouts/_footer.html.erb (Duration: 1.4ms | Allocations: 187)
+Completed 200 OK in 1586ms (Views: 1564.3ms | ActiveRecord: 0.0ms | Allocations: 1023377)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-12-05 12:34:18 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1336.9ms | Allocations: 180644)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 36.5ms | Allocations: 10377)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 152)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 51)
+Completed 200 OK in 1383ms (Views: 1382.0ms | ActiveRecord: 0.0ms | Allocations: 192760)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddResetToUsers (20191205173541)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.9ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_digest" varchar[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_sent_at" datetime[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191205173541"]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/password_resets/new" for 127.0.0.1 at 2019-12-05 12:44:53 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 312.2ms | Allocations: 180091)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 1172.1ms | Allocations: 1012930)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 96)
+  Rendered layouts/_header.html.erb (Duration: 4.2ms | Allocations: 506)
+  Rendered layouts/_flash.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 187)
+Completed 200 OK in 1508ms (Views: 1498.8ms | ActiveRecord: 0.0ms | Allocations: 1197374)
+
+
+Started GET "/password_resets/new" for 127.0.0.1 at 2019-12-05 12:45:13 -0500
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 516)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 17.4ms | Allocations: 10522)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 472)
+  Rendered layouts/_flash.html.erb (Duration: 0.4ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 180)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms | Allocations: 14509)
+
+
+Started GET "/password_resets/new" for 127.0.0.1 at 2019-12-05 12:48:08 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 321)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 15.7ms | Allocations: 10350)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 153)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 51)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 12015)
+
+
+Started POST "/password_resets" for 127.0.0.1 at 2019-12-05 12:48:09 -0500
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"authenticity_token"=>"z6/oQnMUcfJUfQCGpJZWraOo/xXOAFtTZtnB+9cFZgWYbQ2IQvYEEXgdU3RIvfzcTKwX4i+eH/nekepKfYWkbA==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:6:in `create'
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 309)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 18.9ms | Allocations: 10367)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 49)
+Completed 200 OK in 50ms (Views: 25.1ms | ActiveRecord: 0.7ms | Allocations: 14984)
+
+
+Started POST "/password_resets" for 127.0.0.1 at 2019-12-05 12:48:18 -0500
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"authenticity_token"=>"ENZUEC1Db6FDpsLy3MacyAH23SAoT5l8oET05KPrhSlHFLHaHKEaQm/GkQAw7Ta57vI118nR3dYYDN9VCWtHQA==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aaron_newbold@hotmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:6:in `create'
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 308)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 19.5ms | Allocations: 10364)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 34ms (Views: 28.3ms | ActiveRecord: 0.1ms | Allocations: 12413)
+
+
+Started POST "/password_resets" for 127.0.0.1 at 2019-12-05 12:48:33 -0500
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"authenticity_token"=>"h+hLMqUDP0H1OIUVBy+fSMWR+4ZzFNfGqLycgego6S7QKq74lOFKotlY1ufrBDU5KpUTcZKKk2wQ9LcwQqgrRw==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "examples@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:6:in `create'
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 308)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 20.6ms | Allocations: 10364)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 30ms (Views: 24.9ms | ActiveRecord: 0.2ms | Allocations: 12422)
+
+
+Started GET "/password_resets" for 127.0.0.1 at 2019-12-05 12:53:50 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/password_resets"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-12-05 12:54:04 -0500
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-6.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [45 times] (Duration: 15.7ms | Allocations: 6259)
+  Rendered /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-6.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.5ms | Allocations: 704)
+  Rendered /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 25.2ms | Allocations: 10578)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 11938)
+
+
+Started GET "/password_resets/new" for 127.0.0.1 at 2019-12-05 12:54:14 -0500
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 526)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 19.3ms | Allocations: 10533)
+  Rendered layouts/_shim.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 472)
+  Rendered layouts/_flash.html.erb (Duration: 0.5ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 180)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.0ms | Allocations: 14588)
+
+
+Started POST "/password_resets" for 127.0.0.1 at 2019-12-05 12:54:17 -0500
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"authenticity_token"=>"j1//5ZGzlHODNF3mzvQ/jGtliRCEQN4KZRZtEbfMLhnYnRovoFHhkK9UDhQi35X9hGFh52XemqDdXkagHUzscA==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aaron_newbold@hotmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:6:in `create'
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 311)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 17.2ms | Allocations: 10364)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 32ms (Views: 20.5ms | ActiveRecord: 0.6ms | Allocations: 14658)
+
+
+Started POST "/password_resets" for 127.0.0.1 at 2019-12-05 12:54:21 -0500
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"authenticity_token"=>"X3w8yML3sO6cVMGC1ahUBMMvYLpmx59zOeDpPd91nL8IvtkC8xXFDbA0knA5g/51LCuITYdZ29mBqMKMdfVe1g==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "examples@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:6:in `create'
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 309)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 23.5ms | Allocations: 10368)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.1ms | Allocations: 12432)
+
+
+Started GET "/password_resets" for 127.0.0.1 at 2019-12-05 12:58:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/password_resets"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/password_resets" for 127.0.0.1 at 2019-12-05 12:58:23 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/password_resets"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2019-12-05 12:58:26 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 21.6ms | Allocations: 10533)
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 472)
+  Rendered layouts/_flash.html.erb (Duration: 0.4ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 180)
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.0ms | Allocations: 14999)
+
+
+Started GET "/password_resets/new" for 127.0.0.1 at 2019-12-05 12:58:28 -0500
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 524)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 18.6ms | Allocations: 10373)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 153)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 51)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.0ms | Allocations: 12607)
+
+
+Started GET "/password_resets/new" for 127.0.0.1 at 2019-12-05 12:58:30 -0500
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 313)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 29.7ms | Allocations: 10376)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 49)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms | Allocations: 11820)
+
+
+Started POST "/password_resets" for 127.0.0.1 at 2019-12-05 12:58:33 -0500
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"authenticity_token"=>"mAM2f4UGE35gWFmwe7Nnadr7ANy1/T4aQXma6G65dX7PwdO1tORmnUw4CkKXmM0YNf/oK1RjerD5MbFZxDm3Fw==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "examples@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:6:in `create'
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 309)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 26.7ms | Allocations: 10364)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 51ms (Views: 35.3ms | ActiveRecord: 5.1ms | Allocations: 14768)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-12-05 13:01:26 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-6.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [42 times] (Duration: 41.8ms | Allocations: 5860)
+  Rendered /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionpack-6.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.6ms | Allocations: 704)
+  Rendered /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 57.7ms | Allocations: 9994)
+Completed 200 OK in 94ms (Views: 79.9ms | ActiveRecord: 0.0ms | Allocations: 12400)
+
+
+Started GET "/password_resets" for 127.0.0.1 at 2019-12-05 13:01:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/password_resets"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/password_resets" for 127.0.0.1 at 2019-12-05 13:01:33 -0500
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"authenticity_token"=>"mAM2f4UGE35gWFmwe7Nnadr7ANy1/T4aQXma6G65dX7PwdO1tORmnUw4CkKXmM0YNf/oK1RjerD5MbFZxDm3Fw==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "examples@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:6:in `create'
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 13.0ms | Allocations: 511)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 18.6ms | Allocations: 10511)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.7ms | Allocations: 472)
+  Rendered layouts/_flash.html.erb (Duration: 0.6ms | Allocations: 144)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 180)
+Completed 200 OK in 67ms (Views: 47.7ms | ActiveRecord: 1.7ms | Allocations: 17076)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-12-05 13:03:05 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 12.0ms | Allocations: 924)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 15.8ms | Allocations: 10633)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 472)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 180)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms | Allocations: 15060)
+
+
+Started GET "/password_resets/new" for 127.0.0.1 at 2019-12-05 13:03:10 -0500
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 515)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 22.6ms | Allocations: 10373)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 153)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 51)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms | Allocations: 12604)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-12-05 13:03:15 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"5xShtEJr3tUNQKEpDwmjf2h6mbdOybJuaQo9QXp3gCXuHQkVRtGu930NAxFVi1TQsYoM+z4DeTGudaAaZJoF4g==", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 589)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 13.3ms | Allocations: 10365)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 152)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 51)
+Completed 200 OK in 334ms (Views: 17.0ms | ActiveRecord: 3.8ms | Allocations: 22518)
+
+
+Started GET "/password_resets/new" for 127.0.0.1 at 2019-12-05 13:03:27 -0500
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 312)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 29.0ms | Allocations: 10376)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 49)
+Completed 200 OK in 46ms (Views: 43.2ms | ActiveRecord: 0.0ms | Allocations: 11822)
+
+
+Started POST "/password_resets" for 127.0.0.1 at 2019-12-05 13:03:28 -0500
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"authenticity_token"=>"OmYeM1aGSFOXPpMNSvZ5dbW97usALrVubU27Vdai1ncQ2svqz9gAiHCWpawhpQj13Nn3Hd6earJs43GhP6u1YA==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:6:in `create'
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 308)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 15.5ms | Allocations: 10364)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 49)
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 0.2ms | Allocations: 12438)
+
+
+Started POST "/password_resets" for 127.0.0.1 at 2019-12-05 13:03:37 -0500
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"authenticity_token"=>"VWgKn1ZokKLtiTe9cBUh6WNZCsFO+HgPXGq4RdyxXUkCqu9VZ4rlQcHpZE+cPouYjF3iNq9mPKXkIpP0djGfIA==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "examples@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:6:in `create'
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 308)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 16.5ms | Allocations: 10364)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.1ms | Allocations: 12423)
+
+
+Started GET "/rails/mailers/user_mailer/password_reset" for 127.0.0.1 at 2019-12-05 13:05:53 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"user_mailer/password_reset"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/user_mailer_preview.rb:13:in `password_reset'
+UserMailer#password_reset: processed outbound mail in 0.4ms
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.8ms | Allocations: 14818)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/mailers/user_mailer.rb:19:in `password_reset'
+Started GET "/rails/mailers/user_mailer/account_activation" for 127.0.0.1 at 2019-12-05 13:06:15 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"user_mailer/account_activation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/user_mailer_preview.rb:6:in `account_activation'
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (Duration: 7.6ms | Allocations: 207)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (Duration: 0.6ms | Allocations: 178)
+UserMailer#account_activation: processed outbound mail in 26.6ms
+  Rendering /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.1/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.1/lib/rails/templates/rails/mailers/email.html.erb (Duration: 12.7ms | Allocations: 6442)
+Completed 200 OK in 98ms (Views: 63.2ms | ActiveRecord: 0.3ms | Allocations: 17509)
+
+
+Started GET "/rails/mailers/user_mailer/account_activation?part=text%2Fhtml" for 127.0.0.1 at 2019-12-05 13:06:15 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"user_mailer/account_activation"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/user_mailer_preview.rb:6:in `account_activation'
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (Duration: 0.3ms | Allocations: 82)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (Duration: 0.2ms | Allocations: 61)
+UserMailer#account_activation: processed outbound mail in 7.9ms
+  Rendering text template
+  Rendered text template (Duration: 0.2ms | Allocations: 1)
+Completed 200 OK in 23ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 9523)
+
+
+Started GET "/rails/mailers/user_mailer/password_resets" for 127.0.0.1 at 2019-12-05 13:06:39 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"user_mailer/password_resets"}
+Completed 404 Not Found in 21ms (ActiveRecord: 0.0ms | Allocations: 1937)
+
+
+  
+AbstractController::ActionNotFound (Email 'password_resets' not found in UserMailerPreview):
+  
+railties (6.0.1) lib/rails/mailers_controller.rb:45:in `preview'
+actionpack (6.0.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.1) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.1) lib/active_support/callbacks.rb:112:in `block in run_callbacks'
+railties (6.0.1) lib/rails/mailers_controller.rb:97:in `block in set_locale'
+i18n (1.7.0) lib/i18n.rb:297:in `with_locale'
+railties (6.0.1) lib/rails/mailers_controller.rb:96:in `set_locale'
+activesupport (6.0.1) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+activesupport (6.0.1) lib/active_support/callbacks.rb:139:in `run_callbacks'
+actionpack (6.0.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/rails/mailers/user_mailer" for 127.0.0.1 at 2019-12-05 13:06:58 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"user_mailer"}
+  Rendering /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.1/lib/rails/templates/rails/mailers/mailer.html.erb within layouts/application
+  Rendered /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.1/lib/rails/templates/rails/mailers/mailer.html.erb within layouts/application (Duration: 19.7ms | Allocations: 1096)
+Completed 200 OK in 31ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 3206)
+
+
+Started GET "/rails/mailers/user_mailer/password_reset" for 127.0.0.1 at 2019-12-05 13:07:00 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"user_mailer/password_reset"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/user_mailer_preview.rb:13:in `password_reset'
+UserMailer#password_reset: processed outbound mail in 0.7ms
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 1.6ms | Allocations: 14453)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/mailers/user_mailer.rb:19:in `password_reset'
+Started GET "/rails/mailers/user_mailer/password_reset" for 127.0.0.1 at 2019-12-05 13:07:39 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"user_mailer/password_reset"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/user_mailer_preview.rb:13:in `password_reset'
+UserMailer#password_reset: processed outbound mail in 0.5ms
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 1.3ms | Allocations: 15837)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/mailers/user_mailer.rb:18:in `password_reset'
+Started GET "/rails/mailers/user_mailer/password_reset" for 127.0.0.1 at 2019-12-05 13:08:14 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"user_mailer/password_reset"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/user_mailer_preview.rb:13:in `password_reset'
+  Rendering user_mailer/password_reset.html.erb within layouts/mailer
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (Duration: 3.8ms | Allocations: 197)
+  Rendering user_mailer/password_reset.text.erb within layouts/mailer
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (Duration: 0.6ms | Allocations: 172)
+UserMailer#password_reset: processed outbound mail in 10.6ms
+  Rendering /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.1/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /home/aaronrory/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.1/lib/rails/templates/rails/mailers/email.html.erb (Duration: 7.1ms | Allocations: 5276)
+Completed 200 OK in 59ms (Views: 8.6ms | ActiveRecord: 1.3ms | Allocations: 29250)
+
+
+Started GET "/rails/mailers/user_mailer/password_reset?part=text%2Fhtml" for 127.0.0.1 at 2019-12-05 13:08:14 -0500
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"user_mailer/password_reset"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ test/mailers/previews/user_mailer_preview.rb:13:in `password_reset'
+  Rendering user_mailer/password_reset.html.erb within layouts/mailer
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (Duration: 0.4ms | Allocations: 76)
+  Rendering user_mailer/password_reset.text.erb within layouts/mailer
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (Duration: 0.2ms | Allocations: 61)
+UserMailer#password_reset: processed outbound mail in 10.9ms
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 9409)
+
+
+Started GET "/password_resets" for 127.0.0.1 at 2019-12-05 13:08:33 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/password_resets"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/password_resets/new" for 127.0.0.1 at 2019-12-05 13:08:40 -0500
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 515)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 31.1ms | Allocations: 10520)
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 472)
+  Rendered layouts/_flash.html.erb (Duration: 0.5ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 180)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms | Allocations: 14543)
+
+
+Started POST "/password_resets" for 127.0.0.1 at 2019-12-05 13:08:43 -0500
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"authenticity_token"=>"Ufv7PUbzdEhzHZhGjujzw37iVLDJoHtRT0O7yicih+IGOR73dxEBq199y7Riw1mykea8Ryg+P/v3C5B7jaJFiw==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "examples@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:6:in `create'
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 311)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 32.9ms | Allocations: 10364)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 153)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 46ms (Views: 38.6ms | ActiveRecord: 0.2ms | Allocations: 12548)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/password_resets" for 127.0.0.1 at 2019-12-05 13:13:45 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"authenticity_token"=>"nOzElJKH09nwkOUanNs4OQr+wGvL+DK1pQm4XTOKugXLLiFeo2WmOtzwtuhw8JJI5foonCpmdh8dQZPsmQp4bA==", "password_reset"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:6:in `create'
+  [1m[36mUser Update (14.2ms)[0m  [1m[33mUPDATE "users" SET "reset_digest" = ?, "reset_sent_at" = ? WHERE "users"."id" = ?[0m  [["reset_digest", "$2a$12$mvwLGolkRDCcZxeZ1xj6tOJ5ktgfJDmQPRnCnncaQbXqErDT08SHe"], ["reset_sent_at", "2019-12-05 18:13:46.431405"], ["id", 1]]
+  ↳ app/models/user.rb:58:in `create_reset_digest'
+  Rendering user_mailer/password_reset.html.erb within layouts/mailer
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (Duration: 6.2ms | Allocations: 201)
+  Rendering user_mailer/password_reset.text.erb within layouts/mailer
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (Duration: 0.7ms | Allocations: 174)
+UserMailer#password_reset: processed outbound mail in 17.5ms
+Delivered mail 5de948da78e04_2df52ac6839c2484847ed@aaronrory-VirtualBox.mail (6.7ms)
+Date: Thu, 05 Dec 2019 13:13:46 -0500
+From: noreply@example.com
+To: example@railstutorial.org
+Message-ID: <5de948da78e04_2df52ac6839c2484847ed@aaronrory-VirtualBox.mail>
+Subject: Password reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5de948da77ddd_2df52ac6839c24848466e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5de948da77ddd_2df52ac6839c24848466e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To reset your password click the link below:
+
+http://localhost:3000/password_resets/Z_POUd3w5C_EjZx3EiLwmA/edit?email=example%40railstutorial.org
+
+This link will expire in two hours.
+
+If you did not request your password to be reset, please ignore this email and
+your password will stay as it is.
+
+----==_mimepart_5de948da77ddd_2df52ac6839c24848466e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Password reset</h1>
+
+<p>To reset your password click the link below:</p>
+
+<a href="http://localhost:3000/password_resets/Z_POUd3w5C_EjZx3EiLwmA/edit?email=example%40railstutorial.org">Reset password</a>
+
+<p>This link will expire in two hours.</p>
+
+<p>
+If you did not request your password to be reset, please ignore this email and
+your password will stay as it is.
+</p>
+  </body>
+</html>
+
+----==_mimepart_5de948da77ddd_2df52ac6839c24848466e--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 379ms (ActiveRecord: 15.1ms | Allocations: 36233)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-05 13:13:46 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 890)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 23.8ms | Allocations: 10421)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 153)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | Allocations: 33)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 51)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms | Allocations: 13063)
+
+
+Started GET "/password_resets/Z_POUd3w5C_EjZx3EiLwmA/edit?email=example%40railstutorial.org" for 127.0.0.1 at 2019-12-05 13:14:24 -0500
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"example@railstutorial.org", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered password_resets/edit.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 82.6ms | Allocations: 10376)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 179)
+  Rendered layouts/_flash.html.erb (Duration: 2.5ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 51)
+Completed 200 OK in 94ms (Views: 92.8ms | ActiveRecord: 0.0ms | Allocations: 11955)
+
+
+Started GET "/password_resets/Z_POUd3w5C_EjZx3EiLwmA/edit?email=example%40railstutorial.org" for 127.0.0.1 at 2019-12-05 13:25:58 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"example@railstutorial.org", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:27:in `get_user'
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 203)
+  Rendered password_resets/edit.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1436)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 20.8ms | Allocations: 10495)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 472)
+  Rendered layouts/_flash.html.erb (Duration: 0.5ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 180)
+Completed 200 OK in 347ms (Views: 38.5ms | ActiveRecord: 0.3ms | Allocations: 24812)
+
+
+Started GET "/password_resets/Z_POUd3w5C_EjZx3EiLwmA/edit?email=example%40railstutorial.org" for 127.0.0.1 at 2019-12-05 13:26:11 -0500
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"example@railstutorial.org", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:27:in `get_user'
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 195)
+  Rendered password_resets/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1229)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 26.0ms | Allocations: 10517)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 472)
+  Rendered layouts/_flash.html.erb (Duration: 0.4ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 180)
+Completed 200 OK in 366ms (Views: 40.7ms | ActiveRecord: 0.1ms | Allocations: 15787)
+
+
+Started PATCH "/password_resets/Z_POUd3w5C_EjZx3EiLwmA" for 127.0.0.1 at 2019-12-05 13:33:14 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/home/aaronrory/Sample-App/app/controllers/password_resets_controller.rb:52: syntax error, unexpected &.
+    unless @user.&.activated? &&
+                 ^~
+/home/aaronrory/Sample-App/app/controllers/password_resets_controller.rb:65: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/password_resets_controller.rb:52: syntax error, unexpected &.
+app/controllers/password_resets_controller.rb:65: syntax error, unexpected end, expecting end-of-input
+app/controllers/password_resets_controller.rb:52: syntax error, unexpected &.
+app/controllers/password_resets_controller.rb:65: syntax error, unexpected end, expecting end-of-input
+app/controllers/password_resets_controller.rb:52: syntax error, unexpected &.
+app/controllers/password_resets_controller.rb:65: syntax error, unexpected end, expecting end-of-input
+Started PATCH "/password_resets/Z_POUd3w5C_EjZx3EiLwmA" for 127.0.0.1 at 2019-12-05 13:34:32 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"authenticity_token"=>"OhrvxXtjaqtmBHMNdgG3f/U9HFKTlgoQXsA1VRnQSext2AoPSoEfSEpkIP+aKh0OGjn0pXIITrrmiB7ks1CLhQ==", "email"=>"example@railstutorial.org", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update password", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:47:in `get_user'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.3ms | Allocations: 11029)
+
+
+  
+NoMethodError (undefined method `authenticated?' for true:TrueClass):
+  
+app/controllers/password_resets_controller.rb:53:in `valid_user'
+Started GET "/password_resets/Z_POUd3w5C_EjZx3EiLwmA/edit?email=example%40railstutorial.org" for 127.0.0.1 at 2019-12-05 13:35:30 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"example@railstutorial.org", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:47:in `get_user'
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 1.7ms | Allocations: 10772)
+
+
+  
+NoMethodError (undefined method `authenticated?' for true:TrueClass):
+  
+app/controllers/password_resets_controller.rb:52:in `valid_user'
+Started GET "/password_resets/Z_POUd3w5C_EjZx3EiLwmA/edit?email=example%40railstutorial.org" for 127.0.0.1 at 2019-12-05 13:36:31 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"example@railstutorial.org", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:47:in `get_user'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.3ms | Allocations: 10291)
+
+
+  
+NoMethodError (undefined method `authenticated?' for true:TrueClass):
+  
+app/controllers/password_resets_controller.rb:52:in `valid_user'
+Started GET "/password_resets/Z_POUd3w5C_EjZx3EiLwmA/edit?email=example%40railstutorial.org" for 127.0.0.1 at 2019-12-05 13:37:53 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"example@railstutorial.org", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:47:in `retrieve_user'
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 15)
+  Rendered password_resets/edit.html.erb within layouts/application (Duration: 5.0ms | Allocations: 693)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 14.7ms | Allocations: 10350)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 51)
+Completed 200 OK in 318ms (Views: 25.2ms | ActiveRecord: 1.5ms | Allocations: 22444)
+
+
+Started PATCH "/password_resets/Z_POUd3w5C_EjZx3EiLwmA" for 127.0.0.1 at 2019-12-05 13:37:56 -0500
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"authenticity_token"=>"gGmfrxztzclULAh+hCajZMHorxCrEpAfxRYzmMWy2zrXq3plLQ+4KnhMW4xoDQkVLuxH50qM1LV9XhgpbzIZUw==", "email"=>"example@railstutorial.org", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update password", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:47:in `retrieve_user'
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 154)
+  Rendered password_resets/edit.html.erb within layouts/application (Duration: 4.9ms | Allocations: 772)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 21.4ms | Allocations: 10362)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 49)
+Completed 200 OK in 325ms (Views: 30.0ms | ActiveRecord: 0.2ms | Allocations: 13009)
+
+
+Started GET "/password_resets/Z_POUd3w5C_EjZx3EiLwmA" for 127.0.0.1 at 2019-12-05 13:38:14 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/password_resets/Z_POUd3w5C_EjZx3EiLwmA"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/password_resets/Z_POUd3w5C_EjZx3EiLwmA/edit?email=example%40railstutorial.org" for 127.0.0.1 at 2019-12-05 13:38:20 -0500
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"example@railstutorial.org", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:47:in `retrieve_user'
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 1.5ms | Allocations: 10793)
+
+
+  
+NoMethodError (undefined method `authenticated?' for true:TrueClass):
+  
+app/controllers/password_resets_controller.rb:52:in `valid_user'
+Started GET "/password_resets/Z_POUd3w5C_EjZx3EiLwmA/edit?email=example%40railstutorial.org" for 127.0.0.1 at 2019-12-05 13:38:48 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"example@railstutorial.org", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:47:in `retrieve_user'
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 203)
+  Rendered password_resets/edit.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1360)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 18.8ms | Allocations: 10494)
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 472)
+  Rendered layouts/_flash.html.erb (Duration: 1.2ms | Allocations: 139)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 180)
+Completed 200 OK in 385ms (Views: 37.8ms | ActiveRecord: 2.3ms | Allocations: 25434)
+
+
+Started GET "/password_resets/Z_POUd3w5C_EjZx3EiLwmA/edit?email=example%40railstutorial.org" for 127.0.0.1 at 2019-12-05 13:39:05 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"example@railstutorial.org", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:47:in `retrieve_user'
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 3.3ms | Allocations: 10758)
+
+
+  
+NoMethodError (undefined method `authenticated?' for true:TrueClass):
+  
+app/controllers/password_resets_controller.rb:52:in `valid_user'
+Started GET "/password_resets/Z_POUd3w5C_EjZx3EiLwmA/edit?email=example%40railstutorial.org" for 127.0.0.1 at 2019-12-05 13:41:20 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/home/aaronrory/Sample-App/app/controllers/password_resets_controller.rb:53: syntax error, unexpected &&
+           && @user.authenticated?(:reset,...
+           ^~):
+  
+app/controllers/password_resets_controller.rb:53: syntax error, unexpected &&
+app/controllers/password_resets_controller.rb:53: syntax error, unexpected &&
+app/controllers/password_resets_controller.rb:53: syntax error, unexpected &&
+Started GET "/password_resets/Z_POUd3w5C_EjZx3EiLwmA/edit?email=example%40railstutorial.org" for 127.0.0.1 at 2019-12-05 13:41:55 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"example@railstutorial.org", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:47:in `retrieve_user'
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 1.5ms | Allocations: 10792)
+
+
+  
+NoMethodError (undefined method `authenticated?' for true:TrueClass):
+  
+app/controllers/password_resets_controller.rb:53:in `valid_user'
+Started GET "/password_resets/Z_POUd3w5C_EjZx3EiLwmA/edit?email=example%40railstutorial.org" for 127.0.0.1 at 2019-12-05 13:43:11 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"example@railstutorial.org", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:47:in `retrieve_user'
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered password_resets/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 693)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 12.9ms | Allocations: 10350)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 51)
+Completed 200 OK in 335ms (Views: 17.5ms | ActiveRecord: 1.1ms | Allocations: 22262)
+
+
+Started PATCH "/password_resets/Z_POUd3w5C_EjZx3EiLwmA" for 127.0.0.1 at 2019-12-05 13:43:13 -0500
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"authenticity_token"=>"mfErN1indutKZzVcf3STtnXstwx7Iho/g7E+Cj97qSbOM879aUUDCGYHZq6TXznHmuhf+5q8XpU7+RW7lftrTw==", "email"=>"example@railstutorial.org", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update password", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:47:in `retrieve_user'
+  Rendering password_resets/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 147)
+  Rendered password_resets/edit.html.erb within layouts/application (Duration: 4.4ms | Allocations: 765)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 23.5ms | Allocations: 10363)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 147)
+  Rendered layouts/_flash.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 49)
+Completed 200 OK in 334ms (Views: 36.1ms | ActiveRecord: 0.1ms | Allocations: 13016)
+
+
+Started PATCH "/password_resets/Z_POUd3w5C_EjZx3EiLwmA" for 127.0.0.1 at 2019-12-05 13:43:20 -0500
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"authenticity_token"=>"6EwM+BhXAsJmMSVerMszG5j4PM1Ik7C4lFWeOv8JEay/jukyKbV3IUpRdqxA4Jlqd/zUOqkN9BIsHbWLVYnTxQ==", "email"=>"example@railstutorial.org", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update password", "id"=>"Z_POUd3w5C_EjZx3EiLwmA"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:47:in `retrieve_user'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at /home/aaronrory/Sample-App/app/controllers/password_resets_controller.rb:29)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/password_resets_controller.rb:29:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/password_resets_controller.rb:29:in `update'
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password_digest", "$2a$12$s5LNz64zNw5RKskNNZPFHuiL./O7.TDXlscqT1YNNEWw217xs428O"], ["updated_at", "2019-12-05 18:43:20.636189"], ["id", 1]]
+  ↳ app/controllers/password_resets_controller.rb:29:in `update'
+  [1m[35m (16.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/password_resets_controller.rb:29:in `update'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 632ms (ActiveRecord: 17.4ms | Allocations: 5949)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-12-05 13:43:20 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 33.5ms | Allocations: 10375)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:38:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 4.7ms | Allocations: 940)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 51)
+Completed 200 OK in 58ms (Views: 52.5ms | ActiveRecord: 1.0ms | Allocations: 13844)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-05 13:43:24 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:38:in `current_user'
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."activated" = ?[0m  [["activated", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."activated" = ? LIMIT ? OFFSET ?[0m  [["activated", 1], ["LIMIT", 30], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:7
+  Rendered collection of users/_user.html.erb [30 times] (Duration: 20.2ms | Allocations: 4225)
+  Rendered users/index.html.erb within layouts/application (Duration: 35.6ms | Allocations: 8097)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 30.4ms | Allocations: 10375)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 256)
+  Rendered layouts/_flash.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 51)
+Completed 200 OK in 80ms (Views: 75.2ms | ActiveRecord: 0.8ms | Allocations: 20511)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at 2019-12-05 13:43:28 -0500
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:38:in `current_user'
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."activated" = ?[0m  [["activated", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."activated" = ? LIMIT ? OFFSET ?[0m  [["activated", 1], ["LIMIT", 30], ["OFFSET", 90]]
+  ↳ app/views/users/index.html.erb:7
+  Rendered collection of users/_user.html.erb [11 times] (Duration: 3.3ms | Allocations: 1502)
+  Rendered users/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 4218)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 39.2ms | Allocations: 10372)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 250)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 58ms (Views: 55.8ms | ActiveRecord: 0.6ms | Allocations: 16460)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-05 13:43:31 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 20.0ms | Allocations: 10268)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:38:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 2.0ms | Allocations: 809)
+  Rendered layouts/_flash.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 51)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.2ms | Allocations: 13574)
+
+
