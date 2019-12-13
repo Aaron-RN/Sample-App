@@ -5,6 +5,9 @@ ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
+# Photo uploading gems
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.7.0'
 # Pagination for Users index page
 gem 'will_paginate'
 # will_paginate gem will be forced to use bootstrap's pagination styles
@@ -26,6 +29,7 @@ end
 
 group :production do
   gem 'pg'
+  gem 'fog'
 end
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
